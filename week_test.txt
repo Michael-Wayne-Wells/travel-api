@@ -1,0 +1,25 @@
+This week we'll create our own Rails API using RESTful principles. Rails 5 includes built-in functionality to quickly scaffold an API-only application. Here are the topics we'll explore:
+
+Building an API that includes full CRUD functionality and nested routes
+Successfully returning JSON objects via Postman and cURL
+Returning headers with the correct HTTP status code
+Testing APIs with rspec request specs
+Documenting your API endpoints
+Handling exceptions when an API call fails
+You're also encouraged to do further exploration:
+
+Authenticating API users with a stateless token
+Versioning your API
+Using a serializer to normalize JSON data
+Creating API endpoints with custom routes
+Independent Project
+At the end of the week, your independent project will be reviewed for successful implementation of the following features:
+
+Application successfully returns responses for each API call.
+Application handles exceptions.
+Application includes custom routes and model scopes.
+All routes are tested with request specs.
+README thoroughly describes all endpoints along with parameters that can be used.
+Application works as expected.
+Project is in a presentable, portfolio-quality state.
+Project demonstrates understanding of all concepts covered this week. If prompted, you can discuss your application with an instructor using the correct terminology.

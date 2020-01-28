@@ -10,6 +10,11 @@ class LocationsController < ApplicationController
     json_response(@location)
   end
 
+  def most_reviewed
+    @locations = Location.most_reviewed
+    json_response(@locations)
+  end
+
   def create
     @location = Location.create!(location_params)
     json_response(@location, :created)
