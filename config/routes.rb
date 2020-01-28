@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-    resources :locations
+  resources :locations do
+    resources :reviews
+  end
 end
