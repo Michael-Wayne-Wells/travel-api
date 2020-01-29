@@ -6,4 +6,6 @@ class Location < ApplicationRecord
     .order("reviews_count DESC")
     .limit(10)
   )}
+    scope :search, -> (search) { where('city ilike :search OR country ilike :search', search: "%#{search}%")}
+
 end

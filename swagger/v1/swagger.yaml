@@ -1,0 +1,30 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/locations":
+    post:
+      summary: Create a location
+      consumes:
+      - application/json
+      - application/xml
+      parameters:
+      - name: location
+        in: body
+        schema:
+          type: object
+          properties:
+            city:
+              type: string
+            country:
+              type: string
+          required:
+          - city
+          - country
+      responses:
+        '201':
+          description: location created
+        '422':
+          description: invalid request
